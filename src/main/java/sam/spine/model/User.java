@@ -9,7 +9,7 @@ public class User {
     private long user_id;
     @Column(unique = true, nullable = false)
     private String name;
-    private String password;
+    private String passwordHash;
     private String email;
 
     public long getId() {
@@ -24,12 +24,12 @@ public class User {
         this.name = name;
     }
 
-    public String getPassword() {
-        return password;
+    public String getPasswordHash() {
+        return passwordHash;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setPasswordHash(String passwordHash) {
+        this.passwordHash = passwordHash;
     }
 
     public String getEmail() {

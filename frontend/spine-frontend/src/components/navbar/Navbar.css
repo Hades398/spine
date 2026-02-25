@@ -1,0 +1,21 @@
+nav {
+    font-family: Canela, sans-serif;
+    font-size: 25px;
+    padding: 10px;
+    border-bottom: 1px solid #0F1A20;
+    border-top: 1px solid #0F1A20;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0F1A20;
+    font-weight: 500;
+    font-family: Canela, sans-serif;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+nav a.active {
+    color: #621708;
+    font-weight: bold;
+}

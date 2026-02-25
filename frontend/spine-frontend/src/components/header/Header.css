@@ -1,0 +1,18 @@
+h1 {
+    font-size: 64px;
+    font-family: "Canela", sans-serif;
+    text-align: center;
+    background:#0b1120;
+    color:#fff;
+    padding:25px;
+}
+
+.header {
+    display: flex;
+    align-items: flex-start;
+    background-color: #F4EFE8;
+    color: #0F1A20;
+    padding: 15px 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+

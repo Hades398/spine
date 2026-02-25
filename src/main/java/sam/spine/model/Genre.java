@@ -1,27 +1,37 @@
 package sam.spine.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
+
+import jakarta.persistence.*;
 import jakarta.persistence.Id;
+import org.springframework.data.annotation.*;
 
 @Entity
+@Table(name = "genres")
 public class Genre {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    private String name;
+
+    private String genre;
 
     public long getId() {
         return id;
     }
 
-    public String getName() {
-        return name;
+    public void setId(long id) {
+        this.id = id;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getGenre() {
+        return genre;
+    }
+
+    public void setGenre(String genre) {
+        this.genre = genre;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 }
