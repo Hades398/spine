@@ -20,7 +20,6 @@ public class Book {
     private String imageUrl;
     private String authors;
     private String genre;
-    private float rating;
 
     public Long getId() {
         return id;
@@ -80,14 +79,6 @@ public class Book {
 
     public void setImageUrl(String imageUrl) {
         this.imageUrl = imageUrl;
-    }
-
-    public float getRating() {
-        return rating;
-    }
-
-    public void setRating(float rating) {
-        this.rating = rating;
     }
 
 }

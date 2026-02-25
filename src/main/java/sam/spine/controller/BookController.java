@@ -19,4 +19,9 @@ public class BookController {
     public List<Book> searchBooks(@RequestParam("query") String query) {
         return bookRepository.findByTitleContainingIgnoreCase(query);
     }
+
+    @GetMapping("/{id}")
+    public Book getBook(@PathVariable long id) {
+        return bookRepository.findById(id).orElseThrow(() -> new RuntimeException("Book not found"));
+    }
 }
