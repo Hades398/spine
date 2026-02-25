@@ -2,16 +2,6 @@ import requests
 import psycopg2
 import time
 
-DB_CONFIG = {
-    "dbname": "spine",
-    "user": "postgres",
-    "password": "Soccer!1028",
-    "host": "localhost",
-    "port": "5432"
-}
-API_KEY = "AIzaSyAa6YTCGc4oSK49p3TKlBXaC8E5P1L4FKI"
-
-
 def setup_database():
     """Connects to Postgres and creates the books table."""
     conn = psycopg2.connect(**DB_CONFIG)
