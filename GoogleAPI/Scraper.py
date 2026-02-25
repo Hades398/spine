@@ -2,10 +2,6 @@ import requests
 import psycopg2
 import time
 
-# Project ID: spine-487303 on google
-# Spine-GoogleAPIKey name
-# API Key: AIzaSyAa6YTCGc4oSK49p3TKlBXaC8E5P1L4FKI
-
 DB_CONFIG = {
     "dbname": "spine",
     "user": "postgres",
